@@ -1,6 +1,11 @@
 Thief brain : Slippery Thief
     Never steps inside the territory of a cop
+    When no cop is chasing him, he checks if he can move to a better node 
+    (better means a more flexible node, a node with more adjacent nodes )
+    If a better move is not detected, he stays where he is
 
 Cop brain : SWAT Cop
     moves towards the last location of the thief with the smallest ID
+    When he seeis no thieves, he moves towards a good node
+
 

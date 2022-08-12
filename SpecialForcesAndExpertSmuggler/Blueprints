@@ -1,0 +1,26 @@
+Thief brain : Slippery Thief
+    Never steps inside the territory of a cop
+    When no cop is chasing him, he checks if he can move to a better node 
+    (better means a more flexible node, a node with more adjacent nodes )
+    If a better move is not detected, he stays where he is
+
+Cop brain : Special Forces
+    Sets his the first visible enemy thief as his target, 
+    chooses one of the nodes in that thief territory indexed by his rank in his team.
+    (Meaning if the node of a thief has 5 adjacent nodes, the special forces will populate all of them , without communicating)
+    When he seeis no thieves, he moves towards a better node only if it's a better node
+    
+
+This AI's performance agianst the SWATCopAndExpertSmuggler is 33% better.
+
+Result of war between SpecialForces&Smuggler and SWATCop&Smuggler in map 1:
+    Total wars : 250
+    SpecialForces&Smuggler wins : 153 ; percentage : 61.2%
+    SWATCop&Smuggler wins : 97 ; percentage : 38.8%
+
+Result of war between SpecialForces&Smuggler and SWATCop&Smuggler in map 2:
+    Total wars : 49
+    SpecialForces&Smuggler wins : 32 ; percentage : 65.3%
+    SWATCop&Smuggler wins : 17 ; percentage : 34.7%
+    
+
