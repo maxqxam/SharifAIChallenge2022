@@ -1,0 +1,49 @@
+Thief brain : Gambling Bandit
+    Never steps inside the territory of a cop
+    When no cop is chasing him, he checks if he can move to a better node 
+    (better means a more flexible node, a node with more adjacent nodes )
+    If a better move is not detected, he stays where he is
+    When he is not in danger, checks if he resides in the same node as another ally thief,
+    if so, he'll reduce he's precision in order to stay away from him.
+    Also when he is not in danger he never moves to places that are in the territory of 
+    an Ally thief
+
+Cop brain : Special Forces
+    Sets his the first visible enemy thief as his target, 
+    chooses one of the nodes in that thief territory indexed by his rank in his team.
+    (Meaning if the node of a thief has 5 adjacent nodes, the special forces will populate all of them , without communicating)
+    When he seeis no thieves, he moves towards a better node only if it's a better node
+    
+
+This AI's performance agianst the SWAT&Smuggler and Special&Smuggler is slightly better (around 5% to 10%), in the first map.
+But in the second map and against the Special&Smuggler it is almost broken. it's weaker about 30%.
+
+SpecialForces&GamblingBandit vs SpecialForces&ExpertSmuggler
+
+Map 1 :
+    Percentage : 56.8%
+    Total games 125 : 
+            SpecialForces&GamblingBandit wins : 71 
+            SpecialForces&ExpertSmuggler wins : 54
+Map 2:
+    Percentage : 32%
+    Total games 50 :
+         SpecialForces&GamblingBandit wins : 16                 // It's clearly worse!
+         SpecialForces&ExpertSmuggler wins : 34
+
+
+SpecialForces&GamblingBandit vs SWATCop&ExpertSmuggler
+
+Map 1 :
+    Percentage : 64%
+    Total games 125 :
+            SpecialForces&GamblingBandit wins : 80 
+            SWATCop&ExpertSmuggler wins : 45
+Map 2:
+    Percentage : 62%
+    Total games 50 :
+         SpecialForces&GamblingBandit wins : 31 
+         SWATCop&ExpertSmuggler wins : 19
+
+    
+

@@ -1,4 +1,4 @@
-Thief brain : Slippery Thief
+Thief brain : Expert Smuggler
     Never steps inside the territory of a cop
     When no cop is chasing him, he checks if he can move to a better node 
     (better means a more flexible node, a node with more adjacent nodes )
