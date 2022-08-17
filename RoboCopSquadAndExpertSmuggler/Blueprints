@@ -1,0 +1,45 @@
+Thief brain : Expert Smuggler
+    Never steps inside the territory of a cop
+    When no cop is chasing him, he checks if he can move to a better node
+    (better means a more flexible node, a node with more adjacent nodes )
+    If a better move is not detected, he stays where he is
+
+Cop brain : Robo cop Squad
+    It's almost the same as special forces , but it has an extended unity.
+
+    He's strategy is :
+        Patrol - When they have no vision
+        Approach - Same as before, but they don't overstep their destinations
+        Find pin   - Detects pins in the current situation, and keeps them in that case.
+        Catch - If multiple cops can catch a thief, only one of them does
+
+
+This AI's performance against the SpecialForces&ExpertSmuggler is better around 30%
+
+
+RoboCopSquad&ExpertSmuggler vs SpecialForces&ExpertSmuggler
+
+Map 1 :
+    Percent : 60%
+    Total games 110 :
+        Client 1 wins : 67
+        Client 2 wins : 43
+Map 2:
+    Percent : 60%
+    Total games 60 :
+        Client 1 wins : 36
+        Client 2 wins : 24
+
+
+RoboCopSquad&ExpertSmuggler vs SpecialForces&ExpertSmuggler
+
+Map 1 :
+    Percent : 74%
+    Total games 110 :
+        Client 1 wins : 82
+        Client 2 wins : 28
+Map 2:
+    Percent : 51%                       // Alert!
+    Total games 60 :
+        Client 1 wins : 31
+        Client 2 wins : 29
