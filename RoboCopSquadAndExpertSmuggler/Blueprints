@@ -31,7 +31,7 @@ Map 2:
         Client 2 wins : 24
 
 
-RoboCopSquad&ExpertSmuggler vs SpecialForces&ExpertSmuggler
+RoboCopSquad&ExpertSmuggler vs SWATCop&ExpertSmuggler
 
 Map 1 :
     Percent : 74%
@@ -43,3 +43,12 @@ Map 2:
     Total games 60 :
         Client 1 wins : 31
         Client 2 wins : 29
+
+
+RobocopSquad&ExpertSmuggler adjusted version VS RoboCopSquad&ExpertSmuggler :
+
+Map 1 :
+    Percent : 63%
+    Total Games 100 :
+        Client 1 wins : 63
+        Client 2 wins : 37

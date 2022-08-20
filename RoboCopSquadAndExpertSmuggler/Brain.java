@@ -261,6 +261,15 @@ public class Brain
     }
 
 
+    public Node scheme(List<Agent> enemyThieves , List<Agent> allyCops , int turnNumber , Agent thinker , boolean isVisible){
+
+
+
+
+        return thinker.currentNode;
+    }
+
+
     public Node think(List<Agent> enemyThieves , List<Agent> allyCops , int turnNumber , Agent thinker,boolean isVisible)
     {
         CandidateNode=thinker.currentNode;
@@ -282,10 +291,8 @@ public class Brain
             return CandidateNode;
         }
 
-
-
         findPin(enemyThieves,allyCops,thinker);
-        if (isVisible){Catch(enemyThieves,allyCops,thinker);}
+        Catch(enemyThieves,allyCops,thinker);
 
         return CandidateNode;
     }
