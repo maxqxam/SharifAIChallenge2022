@@ -1,0 +1,29 @@
+Thief brain : Serial killer
+    Never steps inside the territory of a cop
+    When no cop is chasing him, he checks if he can move to a better node
+    (better means a more flexible node, a node with more adjacent nodes )
+    If a better move is not detected, he stays where he is
+
+    When a thief is surrounded, you can slip through the surrounding circle if the next move is not isVisible!
+    Make sure to escape to nodes that do not make you surrounded or pinned!
+
+Cop brain : Robo cop Squad
+    It's almost the same as special forces , but it has an extended unity.
+
+    He's strategy is :
+        Patrol - When they have no vision
+        Approach - Same as before, but they don't overstep their destinations
+        Find pin   - Detects pins in the current situation, and keeps them in that case.
+        Catch - If multiple cops can catch a thief, only one of them does
+
+
+
+
+
+RoboCopSquad&SerialKiller vs RoboCopSquad&ExpertSmuggler
+
+Map 1 :
+    Percent : 65%
+    Total games 100 :
+        Client 1 wins : 65
+        Client 2 wins : 35
